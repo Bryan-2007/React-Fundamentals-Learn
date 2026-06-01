@@ -151,6 +151,40 @@ export default Incrementer2;
 ```
 
 5. Event Handling
+- Decides what action needs to be done when an event occurs
+- Events like mouse click, hover, button click, giving input
+- Major events:
+    - onClick
+```
+function Button_click(){
+    const[text, setText] = useState("");
+
+    function insert() {
+            setText("This is some new inserted content");
+    }
+
+    return(
+        <>
+        <h1 style={{color:'red'}}>button_click.jsx</h1>
+        <h3 id='toInsert'>{text}</h3>
+        <button onClick={insert}>SHOW</button>
+        </>
+    );
+}
+```
+    - onChange
+```
+```
+    - onSubmit
+```
+```
+    - onMouseEnter
+```
+```
+    - onMouseLeave
+```
+```
+
 
 6. Forms
 
