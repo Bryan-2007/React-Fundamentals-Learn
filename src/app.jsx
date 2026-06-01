@@ -5,6 +5,7 @@ import Footer from './lessons/components/footer';
 import Welcome from './lessons/JSX/welcome_module';
 import Calculate_age from './lessons/JSX/calculate_age';
 import Passing from './lessons/props/pass_parameters';
+import Increment from './lessons/useState/incrementer';
 
 // define functions for displaying content into 'root' element of index.html
 // the function exported at last will be inserted into root
@@ -20,7 +21,9 @@ function App(){     // Learning & Implementation
 
         <Footer/>   <br />
 
-        <Passing name='Femila' age='45' />  <br />
+        <Passing name='Lily' age='25' />  <br />
+
+        <Increment/> <br />
         
         </>
     );

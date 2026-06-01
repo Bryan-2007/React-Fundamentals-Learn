@@ -105,6 +105,50 @@ export default Welcome;
 ```
 
 4. useState
+- Allows components to store dynamic data
+- An element inside a component can be incremented or set any value from outside
+- Core usecase:
+```
+    const [stateVariable, setStateVariable] = useState(initialValue);
+```
+
+Eg:
+```
+import { useState } from 'react';
+
+function Increment1() {
+    const[count, setCount] = useState(0);
+
+    return(
+        <>
+        <h1 style={{color:'red'}}>incrementer.jsx</h1>
+        <h3>Count: {count}</h3>
+        <button onClick={() => setCount(count+1)}>Click!</button>
+        </>
+    );
+}
+export default Incrementer1;
+```
+```
+import { useState } from 'react';
+
+function Increment2() {
+    const[count, setCount] = useState(0);
+
+    function inc(value) {
+        setCount(count + 1);
+    }
+
+    return(
+    <>
+    <h1 style={{color:'red'}}>incrementer.jsx</h1>
+    <h3>Count: {count}</h3>
+    <button onClick={inc}>Click!</button>
+    </>
+    );
+}
+export default Incrementer2;
+```
 
 5. Event Handling
 
