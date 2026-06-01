@@ -3,6 +3,19 @@
 A hands-on repository for learning React fundamentals step by step, covering components, JSX, props, state management, events, forms, lists, effects, asynchronous operations, and basic Context API through practical examples.
 
 
+# Scope of the Repo
+- Components
+- JSX
+- Props
+- useState
+- Event Handling
+- Forms
+- Lists
+- useEffect
+- Async / Await
+- Context API
+
+
 # What is React?
 
 React is a JavaScript library for building user interfaces, especially web applications(Webapp).
@@ -31,6 +44,79 @@ data --> .jsx files --> app.jsx --> main.jsx --> index.html --> display
 * React
 * node.js
 * JSON
+
+# REACT Basics
+
+1. Components
+- Reusable UI module in webapp
+- Literally a JS function
+- Must return a single entity
+
+Eg:
+
+```
+function Welcome(){
+    return(
+        <h1> Hello, Welcome! </h1>
+    );
+}
+
+export default Welcome;
+```
+
+2. JSX
+- Stands for Javascript XML
+- Allows us to write HTML code directly inside JS
+- All JS & HTML features can be included in a single file
+
+Eg:
+
+```
+function Welcome(){
+    return(
+        <>
+        <p> My name is Tom </p>
+        <p> I am {5 + 21} yrs old </p>
+        </>
+    );
+}
+
+export default Welcome;
+```
+
+3. Props
+- Stands for properties
+- Simply, they are just parameters passed into a JS function
+- Parameters of a React component
+
+Eg:
+
+```
+function Welcome(name, age){
+    return(
+        <>
+        <p> My name is {name} </p>
+        <p> I am {age} yrs old </p>
+        </>
+    );
+}
+
+export default Welcome;
+```
+
+4. useState
+
+5. Event Handling
+
+6. Forms
+
+7. Lists
+
+8. useEffect
+
+9. Async / Await
+
+10. Context API
 
 
 # PROJECT SETUP for React Vite
@@ -62,4 +148,3 @@ Step 5
 
 * Run ```npm run dev```
 * Use provided link to open live server in browser & view result
-
